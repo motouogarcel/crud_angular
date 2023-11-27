@@ -1,0 +1,41 @@
+.signup
+{
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+  border: 0.1px solid black;
+  padding: 10px;
+}
+
+.form-inline input{
+  border: 01px solid #ccc;
+  height: 40px;
+  margin: 5px;
+  padding: 0.10px;
+  width: 60%;
+  font-size: 1.4rem;
+}
+
+.btn
+{
+  font-size: 1.4rem;
+  height: 40px;
+  background-color: #1d1d1d;
+  border: none;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup ul{
+  list-style: none;
+  padding: 0;
+}
+
+.signup ul li{
+  border: 0.1px solid #1d1d1d;
+  justify-content: space-between;
+  padding: 5px;
+}
+

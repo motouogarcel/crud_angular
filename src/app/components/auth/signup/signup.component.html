@@ -1,0 +1,32 @@
+<div class="signup">
+  <div class="form-inline firstname">
+    <input
+     type="text"
+     name="firstname"
+     placeholder=" your name ..."
+     [(ngModel)]="firstname"
+     />
+    <button class="btn" (click)="handleSave()">Save</button>
+  </div>
+
+
+  <div class="names">
+    <!--
+      il est possible de recuperer les index  de l'element
+      index: position de l'element
+      odd: indique si l'element est à la position impaire
+      even: indique si l'element est à la position paire
+      first: indique si l'element est à la première position
+      last: indique si l'element est à la dernière position
+    -->
+    <ul>
+      <li class="flex aic" *ngFor="let name of names; let position = index">{{name}}
+        <div class="name-action flex gap-10">
+          <button class="btn" (click)="handleDelete(position)">Delete</button>
+          <button class="btn" (click)="handleUpdate(position)">Update</button>
+        </div>
+         </li>
+    </ul>
+  </div>
+
+</div>
